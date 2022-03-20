@@ -1,0 +1,4 @@
+london: rainy for the three next days , the temperatures are 5-16
+paris: today and tomorrow rainy and Wednesday cloudy , the temperatures are 10-12
+jerusalem: today snowy and rainy for the next two days , the temperatures -2-0
+moscow: snowy for the next three days , temperatures -7-0
