@@ -2,7 +2,6 @@ import java.io.IOException;
 import java.net.DatagramPacket;
 import java.net.DatagramSocket;
 import java.net.InetAddress;
-
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
@@ -11,7 +10,6 @@ import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 
 public class clientMainController {
-	
 	Alert alert = new Alert(Alert.AlertType.ERROR);
 
     @FXML
@@ -71,8 +69,7 @@ public class clientMainController {
 
 	public void getFromServer(DatagramSocket socket) {
 		byte[] receiveData = new byte[1024];
-		DatagramPacket packet = new DatagramPacket(receiveData, receiveData.length);
-		
+		DatagramPacket packet = new DatagramPacket(receiveData, receiveData.length);	
 		try {
 			//receive the asked data from the server
 			socket.receive(packet);  
@@ -91,6 +88,4 @@ public class clientMainController {
     	alert.setContentText("please insert again ");
     	alert.showAndWait();		
 	}
-
-
 }
