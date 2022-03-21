@@ -5,7 +5,6 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 public class clientMain extends Application{ 
-	
 	public void start(Stage stage) throws Exception{ 
 		Parent root = (Parent) FXMLLoader.load(getClass().getResource("clientMain.fxml")); 
 		Scene scene = new Scene(root); 
